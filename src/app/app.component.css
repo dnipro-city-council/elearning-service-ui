@@ -1,0 +1,12 @@
+root{
+  height: 100%;
+  display: block;
+}
+
+md-sidenav-container{
+  height: 100%;
+}
+
+md-sidenav {
+  min-width: 200px
+}

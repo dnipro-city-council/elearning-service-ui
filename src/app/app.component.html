@@ -1,3 +1,29 @@
-<h1>
-  {{title}}
-</h1>
+<div class="flex-container"
+     fxLayout="column"
+     fxLayout.xs="column"
+     fxLayoutAlign="center center"
+     fxLayoutAlign.xs="start"
+     fxFlexFill>
+
+  <md-toolbar fxFlex="64px">
+    <button md-icon-button (click)="sidenav.toggle()">
+      <md-icon>menu</md-icon>
+    </button>
+    <a href="http://google.com" target="_blank">Learning Management System</a>
+  </md-toolbar>
+
+  <md-sidenav-container fxFlex fxFlexFill>
+    <md-sidenav #sidenav>
+      <md-nav-list>
+          <a md-list-item>Trainings</a>
+          <a md-list-item>Webinars</a>
+          <a md-list-item>Resources</a>
+          <a md-list-item>Quizzes</a>
+          <a md-list-item>Internal Documents</a>
+      </md-nav-list>
+    </md-sidenav>
+
+    <div class="example-sidenav-content"></div>
+  </md-sidenav-container>
+
+</div>
