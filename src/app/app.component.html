@@ -9,17 +9,17 @@
     <button md-icon-button (click)="sidenav.toggle()">
       <md-icon>menu</md-icon>
     </button>
-    <a href="http://google.com" target="_blank">Learning Management System</a>
+    <a routerLink="/home">Learning Management System</a>
   </md-toolbar>
 
   <md-sidenav-container fxFlex fxFlexFill>
     <md-sidenav mode="side" opened="true" #sidenav>
       <md-nav-list>
-          <a md-list-item routerLink="/trainings">Trainings</a>
-          <a md-list-item routerLink="/webinars">Webinars</a>
-          <a md-list-item routerLink="/resources">Resources</a>
-          <a md-list-item routerLink="/quizzes">Quizzes</a>
-          <a md-list-item routerLink="/internal-documents">Internal Documents</a>
+        <a md-list-item
+           *ngFor="let route of routeConfigs"
+           [routerLink]="route.routerLink"
+           class="sidenav-item"
+           routerLinkActive="active-route"> {{ route.title }} </a>
       </md-nav-list>
     </md-sidenav>
 

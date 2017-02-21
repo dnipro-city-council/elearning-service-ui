@@ -10,3 +10,8 @@ md-sidenav-container{
 md-sidenav {
   min-width: 200px
 }
+
+.sidenav-item.active-route{
+  font-weight: 600;
+  background-color: rgba(0,0,0,.05);
+}

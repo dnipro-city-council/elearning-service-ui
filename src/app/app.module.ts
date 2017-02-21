@@ -14,7 +14,8 @@ import { ResourcesComponent } from './resources/resources.component';
 import { QuizzesComponent } from './quizzes/quizzes.component';
 import { InternalDocumentsComponent } from './internal-documents/internal-documents.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
-import {AppRoutingModule} from "./app-routing.module";
+import {AppRoutingModule} from './app-routing.module';
+import {appNavigation, navigationConfig} from './constants/navigation.constant';
 
 
 @NgModule({
@@ -36,7 +37,9 @@ import {AppRoutingModule} from "./app-routing.module";
     HttpModule,
     FlexLayoutModule
   ],
-  providers: [],
+  providers: [
+    { provide: appNavigation, useValue: navigationConfig }
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
