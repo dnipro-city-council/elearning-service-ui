@@ -15,15 +15,17 @@
   <md-sidenav-container fxFlex fxFlexFill>
     <md-sidenav #sidenav>
       <md-nav-list>
-          <a md-list-item>Trainings</a>
-          <a md-list-item>Webinars</a>
-          <a md-list-item>Resources</a>
-          <a md-list-item>Quizzes</a>
-          <a md-list-item>Internal Documents</a>
+          <a md-list-item routerLink="/trainings">Trainings</a>
+          <a md-list-item routerLink="/webinars">Webinars</a>
+          <a md-list-item routerLink="/resources">Resources</a>
+          <a md-list-item routerLink="/quizzes">Quizzes</a>
+          <a md-list-item routerLink="/internal-documents">Internal Documents</a>
       </md-nav-list>
     </md-sidenav>
 
-    <div class="example-sidenav-content"></div>
+    <div class="example-sidenav-content">
+      <router-outlet></router-outlet>
+    </div>
   </md-sidenav-container>
 
 </div>
