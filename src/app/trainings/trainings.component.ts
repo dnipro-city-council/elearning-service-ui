@@ -12,4 +12,12 @@ export class TrainingsComponent implements OnInit {
   ngOnInit() {
   }
 
+  expandedEvent(): void {
+
+  }
+
+  collapsedEvent(): void {
+
+  }
+
 }

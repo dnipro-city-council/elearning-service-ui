@@ -4,7 +4,8 @@ import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 import { MaterialModule } from '@angular/material';
 import 'hammerjs';
-import {FlexLayoutModule} from "@angular/flex-layout";
+import {FlexLayoutModule} from '@angular/flex-layout';
+import { CovalentExpansionPanelModule } from '@covalent/core';
 
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
@@ -30,6 +31,7 @@ import {appNavigation, navigationConfig} from './constants/navigation.constant';
     PageNotFoundComponent
   ],
   imports: [
+    CovalentExpansionPanelModule.forRoot(),
     AppRoutingModule,
     MaterialModule,
     BrowserModule,
