@@ -22,7 +22,7 @@
     "@angular/platform-browser": "^2.3.1",
     "@angular/platform-browser-dynamic": "^2.3.1",
     "@angular/router": "^3.3.1",
-    "@covalent/core": "^1.0.0-beta.1-1",
+    "@covalent/core": "git://github.com/Teradata/covalent-nightly.git",
     "@covalent/highlight": "^1.0.0-beta.1-1",
     "@covalent/markdown": "^1.0.0-beta.1-1",
     "core-js": "^2.4.1",
