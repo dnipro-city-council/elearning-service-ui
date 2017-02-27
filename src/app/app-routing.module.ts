@@ -11,7 +11,7 @@ const appRoutes: Routes = [
   {path: 'trainings', loadChildren: './trainings/trainings.module#TrainingsModule'},
   {path: 'webinars', loadChildren: './webinars/webinars.module#WebinarsModule'},
   {path: 'resources', loadChildren: './resources/resources.module#ResourcesModule'},
-  {path: 'quizzes', component: QuizzesComponent},
+  {path: 'quizzes', loadChildren: './quizzes/quizzes.module#QuizzesModule'},
   {path: 'internal-documents', component: InternalDocumentsComponent},
   {path: '**', component: PageNotFoundComponent}
 ];
