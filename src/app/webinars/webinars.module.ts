@@ -1,10 +1,14 @@
 import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
+import { WebinarsRoutingModule } from './webinars-routing.module';
+import {WebinarsComponent} from "./webinars.component";
 
 @NgModule({
   imports: [
-    CommonModule
+    WebinarsRoutingModule
   ],
-  declarations: []
+  declarations: [
+    WebinarsComponent
+  ]
 })
+
 export class WebinarsModule { }

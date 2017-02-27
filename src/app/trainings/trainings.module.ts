@@ -1,6 +1,6 @@
-import {NgModule} from "@angular/core";
-import {TrainingsComponent} from "./trainings.component";
-import {TrainingsRoutingModule} from "./trainings-routing.module";
+import { NgModule } from "@angular/core";
+import { TrainingsComponent } from "./trainings.component";
+import { TrainingsRoutingModule } from "./trainings-routing.module";
 import { CovalentExpansionPanelModule } from '@covalent/core';
 
 @NgModule({
@@ -11,7 +11,6 @@ import { CovalentExpansionPanelModule } from '@covalent/core';
     CovalentExpansionPanelModule.forRoot(),
     TrainingsRoutingModule
   ],
-  exports: [],
-  bootstrap: [TrainingsComponent]
+  exports: []
 })
 export class TrainingsModule {}

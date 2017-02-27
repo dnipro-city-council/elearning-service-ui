@@ -22,7 +22,6 @@ import {appNavigation, navigationConfig} from './constants/navigation.constant';
   declarations: [
     AppComponent,
     HomeComponent,
-    WebinarsComponent,
     ResourcesComponent,
     QuizzesComponent,
     InternalDocumentsComponent,

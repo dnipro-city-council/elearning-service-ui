@@ -1,10 +1,17 @@
 import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
+import {RouterModule, Routes}  from '@angular/router';
+import {WebinarsComponent} from "./webinars.component";
+
+const webinarsRouting:Routes = [
+  {path: '', component: WebinarsComponent}
+];
 
 @NgModule({
   imports: [
-    CommonModule
+    RouterModule.forChild(webinarsRouting)
   ],
-  declarations: []
+  exports: [
+    RouterModule
+  ]
 })
 export class WebinarsRoutingModule { }
