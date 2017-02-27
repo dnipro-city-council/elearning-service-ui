@@ -9,7 +9,6 @@ import { CovalentExpansionPanelModule } from '@covalent/core';
 
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
-import { TrainingsComponent } from './trainings/trainings.component';
 import { WebinarsComponent } from './webinars/webinars.component';
 import { ResourcesComponent } from './resources/resources.component';
 import { QuizzesComponent } from './quizzes/quizzes.component';
@@ -23,7 +22,6 @@ import {appNavigation, navigationConfig} from './constants/navigation.constant';
   declarations: [
     AppComponent,
     HomeComponent,
-    TrainingsComponent,
     WebinarsComponent,
     ResourcesComponent,
     QuizzesComponent,
