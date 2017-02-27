@@ -1,7 +1,6 @@
 import {NgModule}              from '@angular/core';
 import {RouterModule, Routes}  from '@angular/router';
 import {HomeComponent} from "./home/home.component";
-import {ResourcesComponent} from "./resources/resources.component";
 import {InternalDocumentsComponent} from "./internal-documents/internal-documents.component";
 import {QuizzesComponent} from "./quizzes/quizzes.component";
 import {PageNotFoundComponent} from "./page-not-found/page-not-found.component";
@@ -11,7 +10,7 @@ const appRoutes: Routes = [
   {path: 'home', component: HomeComponent},
   {path: 'trainings', loadChildren: './trainings/trainings.module#TrainingsModule'},
   {path: 'webinars', loadChildren: './webinars/webinars.module#WebinarsModule'},
-  {path: 'resources', component: ResourcesComponent},
+  {path: 'resources', loadChildren: './resources/resources.module#ResourcesModule'},
   {path: 'quizzes', component: QuizzesComponent},
   {path: 'internal-documents', component: InternalDocumentsComponent},
   {path: '**', component: PageNotFoundComponent}
@@ -25,5 +24,4 @@ const appRoutes: Routes = [
     RouterModule
   ]
 })
-export class AppRoutingModule {
-}
+export class AppRoutingModule {}
