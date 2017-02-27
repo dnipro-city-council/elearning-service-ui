@@ -9,7 +9,6 @@ import { CovalentExpansionPanelModule } from '@covalent/core';
 
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
-import { InternalDocumentsComponent } from './internal-documents/internal-documents.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import {AppRoutingModule} from './app-routing.module';
 import {appNavigation, navigationConfig} from './constants/navigation.constant';
@@ -19,7 +18,6 @@ import {appNavigation, navigationConfig} from './constants/navigation.constant';
   declarations: [
     AppComponent,
     HomeComponent,
-    InternalDocumentsComponent,
     PageNotFoundComponent
   ],
   imports: [
