@@ -4,20 +4,18 @@ import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 import { MaterialModule } from '@angular/material';
 import 'hammerjs';
-import {FlexLayoutModule} from '@angular/flex-layout';
+import { FlexLayoutModule } from '@angular/flex-layout';
 import { CovalentExpansionPanelModule } from '@covalent/core';
 
 import { AppComponent } from './app.component';
-import { HomeComponent } from './home/home.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
-import {AppRoutingModule} from './app-routing.module';
-import {appNavigation, navigationConfig} from './constants/navigation.constant';
+import { AppRoutingModule } from './app-routing.module';
+import { appNavigation, navigationConfig } from './constants/navigation.constant';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    HomeComponent,
     PageNotFoundComponent
   ],
   imports: [
