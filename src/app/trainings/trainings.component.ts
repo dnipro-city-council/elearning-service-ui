@@ -1,4 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
+import {TrainingsService} from './shared/trainings.service';
+import { Training } from './shared/trainings.constant';
 
 @Component({
   selector: 'app-trainings',
@@ -7,9 +9,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TrainingsComponent implements OnInit {
 
-  constructor() { }
+  private trainings: Training[];
+
+  constructor(private trainingsService: TrainingsService) {
+  }
 
   ngOnInit() {
+    this.trainingsService.loadTrainings().subscribe(trainings => this.trainings = trainings);
   }
 
   expandedEvent(): void {
